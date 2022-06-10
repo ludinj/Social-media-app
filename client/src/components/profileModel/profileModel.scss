@@ -1,0 +1,44 @@
+.infoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  .infoInput {
+    display: flex;
+    gap: 1rem;
+    height: 2rem;
+    width: 90%;
+    .Input {
+      border: none;
+      outline: none;
+      background-color: var(--inputColor);
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1;
+    }
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--buttonBg);
+    transition: all 100ms ease;
+    border: 2px solid var(--orange);
+    font-weight: bold;
+    width: 6rem;
+    height: 2rem;
+    align-self: center;
+    &:hover {
+      cursor: pointer;
+      color: var(--orange);
+      background: transparent;
+    }
+  }
+}
